@@ -25,7 +25,7 @@ io.on('connect', (socket) => {
 
        io.emit('newMessage', generateMessage(message.from, message.text));
 
-       callback('This is from server.');
+       callback();
        
     });
 
